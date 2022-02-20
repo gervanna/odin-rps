@@ -4,9 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d79aaed805.js" crossorigin="anonymous"></script>
     <title>Document</title>
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header id="mainHeader">
+        <h1>Welcome to Rock Paper Scissors Lizard Spock</h1>
+    </header>
+    <div class="rules">
+        <ul class="left">
+            <li><b>RULES:</b></li>
+            <li>Scissors cuts Paper</li>
+            <li>Paper covers Rock</li>
+            <li>Rock crushes Lizard</li>
+        </ul>
+        <ul class="center">
+            <li>Lizard poisons Spock</li>
+            <li>Spock smashes Scissors</li>
+            <li>Scissors decapitates Lizard</li>
+        </ul>
+        <ul class="right">
+            <li>Lizard eats Paper</li>
+            <li>Paper disproves Spock</li>
+            <li>Spock vaporizes Rock</li>
+            <li>Rock crushes Scissors</li>
+        </ul>
+    </div>
+    <div id="container">
+        <div id="main">
+            <div class="scoreboard">
+                <h2 class="score-detail" id="scoreDetail">What will you choose?</h2>
+                <h3 class="score-msgs" id="scoreMsgs">First to 5 points is the winner!</h3>
+                
+                <div class="score-container">
+                    <div class="score-box">
+                        <p id="playerChoice"></p>
+                        <p class="score" id="playerScore">Player: 0</p>
+                    </div>
+                    <div class="score-box">
+                        <p id="computerChoice"></p>
+                        <p class="score" id="computerScore">Computer: 0</p>
+                    </div>
+                </div>
+            </div>
+            <div class="choices">
+                <button class="button" id="rockBtn"><i class="fa-solid fa-hand-back-fist fa-lg"></i><br>Rock</button>
+                <button class="button" id="paperBtn"><i class="fa-solid fa-hand fa-lg"></i><br>Paper</button>
+                <button class="button" id="scissorsBtn"><i class="fa-solid fa-hand-scissors fa-lg"></i><br>Scissors</button>
+                <button class="button" id="lizardBtn"><i class="fa-solid fa-hand-lizard fa-lg"></i><br>Lizard</button>
+                <button class="button" id="spockBtn"><i class="fa-solid fa-hand-spock fa-lg"></i><br>Spock</button>
+            </div>
+        </div>
+    </div>
+    <div class="restart">
+        <button id="restartBtn">RESET</button>
+    </div>
+    <div class="footer">
+        <p>Copyright © <a href="https://github.com/gervanna">Gervanna Stephens</a></p>
+        <p><a href="http://www.samkass.com/theories/RPSSL.html">All rights & attribution for the game "Rock Paper Scissors Lizard Spock" is the property of Sam Kass.</a></p>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
